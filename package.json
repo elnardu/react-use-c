@@ -4,6 +4,7 @@
   "description": "Use C in your server side react components",
   "main": "this field is so weird",
   "scripts": {
+    "start": "npm run build && node server.js",
     "build": "node build.js",
     "clean": "rm -r dist",
     "test": "true"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 // I haven't used any of this bs in a year, hopefully it still the same
@@ -23,7 +23,7 @@ ${strings[0]}
 async function runC(code) {
   const res = await fetch("/rpc/exec", {
     method: "POST",
-    body: JSON.stringify({code: code}),
+    body: JSON.stringify({ code: code }),
     headers: {
       "Content-Type": "application/json",
     },
@@ -39,23 +39,33 @@ const appStyles = css`
 
 const App = () => (
   <div className={appStyles}>
-    <h1>Hello, world!</h1>
-    <BigButton />
+    <h1>React use C demo</h1>
+    <Demo />
   </div>
 );
 
-const BigButton = () => (
-  <button onClick={() => {
+const Demo = () => {
+  const [output, setOutput] = useState(null);
+  const cHelloWorld = async () => {
     "use c";
     #include <stdio.h>
-
     int main() {
-      printf("Hello!\n");
+      printf("Hello from C!\n");
       return 0;
     }
-  }}>
-    Click me!
-  </button>
-);
+  };
+  const onClick = async () => {
+    const out = await cHelloWorld();
+    setOutput(out.stdout);
+  };
+
+  return (
+    <div>
+      <button onClick={onClick}>Run C code!</button>
+      <p>Output from C:</p>
+      <pre>{ output }</pre>
+    </div>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById("app"));
