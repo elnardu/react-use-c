@@ -1,8 +1,10 @@
 # React `use c`
 
-https://github.com/elnardu/react-use-c/assets/8999001/24a433d9-af89-4962-a0a1-ba6533092d0b
+Use C in your React!
 
-Context: https://twitter.com/scaredmonad/status/1717657195829957023
+<img width="590" alt="image" src="https://github.com/elnardu/react-use-c/assets/8999001/495c39d6-3fb1-437d-9af0-03020c215159">
+
+https://github.com/elnardu/react-use-c/assets/8999001/24a433d9-af89-4962-a0a1-ba6533092d0b
 
 ## TODO
 
