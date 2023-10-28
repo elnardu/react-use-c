@@ -1,0 +1,38 @@
+{
+  "name": "react-use-c",
+  "version": "1.0.0",
+  "description": "Use C in your server side react components",
+  "main": "this field is so weird",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rm -r dist",
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elnardu/react-use-c.git"
+  },
+  "keywords": [
+    "C",
+    "Rust",
+    "React",
+    "Typescript",
+    "Bun",
+    "Zig"
+  ],
+  "author": "me",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/elnardu/react-use-c/issues"
+  },
+  "homepage": "https://github.com/elnardu/react-use-c#readme",
+  "devDependencies": {
+    "esbuild": "0.19.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@oven/zig": "0.12.0-dev.1286"
+  }
+}
