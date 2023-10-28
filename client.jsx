@@ -21,7 +21,7 @@ ${strings[0]}
 }
 
 async function runC(code) {
-  const res = await fetch("/rpc/exec", {
+  const res = await fetch("/rpc/rce", {
     method: "POST",
     body: JSON.stringify({ code: code }),
     headers: {

@@ -57,7 +57,7 @@ async function runC(code) {
   return out;
 }
 
-app.post("/rpc/exec", async (req, res) => {
+app.post("/rpc/rce", async (req, res) => {
   const { code } = req.body;
   const out = await runC(code);
   res.json(out);
