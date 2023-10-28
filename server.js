@@ -13,7 +13,7 @@ app.use(express.json());
 
 const zigPath = "node_modules/@oven/zig/zig";
 
-async function spawn(command, args) {
+function spawn(command, args) {
   return new Promise((resolve) => {
     // damn this api is shit
     const p = childProcess.spawn(command, args);
