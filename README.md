@@ -1,5 +1,7 @@
 # React `use c`
 
+> Like this? Play cursedCTF 2024 teaser this Halloween! https://discord.gg/RGzgGvTnYA
+
 Use C in your React! (Or if you prefer [Rust](https://github.com/elnardu/react-use-rust))
 
 <img width="590" alt="image" src="https://github.com/elnardu/react-use-c/assets/8999001/495c39d6-3fb1-437d-9af0-03020c215159">
