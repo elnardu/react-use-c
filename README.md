@@ -13,5 +13,5 @@ https://github.com/elnardu/react-use-c/assets/8999001/24a433d9-af89-4962-a0a1-ba
 - [ ] Add typescript support
 - [ ] Make somebody else figure out publishing this to npm (I am still not over it)
 - [ ] Remove typescript support
-- [ ] Tell windows ppl to just use WSL
+- [x] Tell windows ppl to just use WSL (see https://github.com/elnardu/react-use-c/issues/2)
 - [ ] esbuild is not cursed enough, gotta switch to something else
